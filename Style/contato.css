@@ -1,0 +1,62 @@
+.contato {
+    background-color: var(--branco-pricipal);
+    color: var(--azul--principal);
+    padding: 1.25rem;
+}
+.contato__titulo {
+    font-weight:500;
+    font-size: 18px;
+}
+.contato__descricao {
+    font-weight: 300; 
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+.contato__barra-de-pesquisa{
+    border-radius: 20px;
+    color: var(--azul--principal);
+    border: 2px solid var(--azul--principal);
+    width: 90%;
+    padding:0.6rem;
+}
+.contato__barra-de-pesquisa::placeholder{
+    font-size: 14px;   
+    padding-left: 2.6rem;
+    background:url(../Assets/Email.svg) no-repeat;
+    background-position: 1em;
+    color: var(--azul--principal);
+}
+@media screen and (min-width: 1024px){
+    .contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contato__barra-de-pesquisa{
+        width: 30%;
+    }
+    .contato__barra-de-pesquisa:checked{
+        text-align: center;
+
+    }
+    .contato__descricao{
+        margin-right: 1rem ;
+       width: 65%;
+    }
+    .contato__titulo{
+        font-size: 24px;
+    }
+    .topicos__links:hover{
+        background-color: #FEBA17;
+    }
+}
+@media screen and (min-width: 1728px){
+    .contato{
+        width: 100%;
+        padding: 4rem 0;
+    }
+    .contato__barra-de-pesquisa{
+        width: 20%;
+    }
+
+}
